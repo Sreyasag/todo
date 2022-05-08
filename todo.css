@@ -7,12 +7,13 @@
 .navbar-brand{
     padding-left: 2%;
     padding-top: 1rem;
+    font-weight: bolder;
 }
 
 .nav-item{
     padding-left: 1rem;
-    
     padding-right: 1rem;
+    font-weight: bold;
 }
 #body{
     background-color: rgb(194, 221, 245);
@@ -26,8 +27,8 @@
 
 #list{
     background-color: rgb(194, 221, 245);
-    padding-bottom: 5%;
-    padding-top: 6%;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
 }
 
 .card1{
