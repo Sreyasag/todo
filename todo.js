@@ -33,8 +33,7 @@ let p = new Promise(function(resolve,reject){
 })
 
 p.then(function(checkboxes){
-  let count = 0;
-  let previousCount= 0;  
+  let count = 0;  
   for( item of checkboxes){
     item.addEventListener('change', function(){
       if(this.checked == true){count++;}
