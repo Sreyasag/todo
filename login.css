@@ -9,38 +9,35 @@
     padding-top: 2rem;
     
 }
+.navbar{
+    background-color: rgba(194, 221, 245, 0.742);
+    box-shadow: 2px 2px 10px rgba(27, 26, 26, 0.14);
+}
 
 .nav-item{
     padding-left: 1rem;
     
     padding-right: 1rem;
 }
-
-
-#home {
-
+#body{
     background-color: rgb(194, 221, 245);
-    padding-bottom: 15%;
 }
 
 
-
-   
-
 .form1{
-    margin: 5% 25% 5% 25%;
-    border: 1px solid rgb(227, 225, 225);
+    margin: 8% 25% 5% 25%;
+    border: 1px solid rgb(181, 177, 177);
     border-radius: 10px;
     padding: 5%;
-    background-color:rgba(181, 206, 229, 0.642);
-    box-shadow: 1px 1px 4px rgb(141, 148, 148);
+    background-color:rgba(181, 206, 229, 0.23);
+    box-shadow: 1px 1px 4px rgba(141, 148, 148, 0.349);
     
     
 }
 
 .form1:hover{
     
-    box-shadow: 1px 1px 7px rgb(141, 148, 148);
+    box-shadow: 1px 1px 10px rgba(95, 97, 97, 0.208);
 }
 .form-group{
     margin-bottom: 1rem;
@@ -64,7 +61,6 @@
     box-shadow: 1px 1px 4px rgb(104, 111, 111);
 
 }
-
 
 
 
