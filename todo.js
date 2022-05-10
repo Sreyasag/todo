@@ -34,11 +34,12 @@ let p = new Promise(function(resolve,reject){
 
 
 let count = 0; 
+
 function done5(item){
   item.addEventListener('change', function(){
     if(this.checked == true){count++;}
     else{count--;}
-    if(count==5){alert("Congrats! 5 tasks have been completed.")}
+    if(count==5){document.getElementById('alert').style.visibility = 'visible'}
   })
 }
 
