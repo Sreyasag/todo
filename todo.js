@@ -32,14 +32,21 @@ let p = new Promise(function(resolve,reject){
   }
 })
 
+
+let count = 0; 
+function done5(item){
+  item.addEventListener('change', function(){
+    if(this.checked == true){count++;}
+    else{count--;}
+    if(count==5){alert("Congrats! 5 tasks have been completed.")}
+  })
+}
+
+
 p.then(function(checkboxes){
-  let count = 0;  
+   
   for( item of checkboxes){
-    item.addEventListener('change', function(){
-      if(this.checked == true){count++;}
-      else{count--;}
-      if(count==5){alert("Congrats! 5 tasks have been completed.")}
-    })
+    done5(item)
   }  
 })
 
@@ -48,7 +55,7 @@ function add(){
     listItem.className = "col-lg-4 col-md-6 card1";
     listItem.innerHTML = `<div class="card h-100">
                               <div class="card-body">
-                                  <input type="checkbox">
+                                  <input type="checkbox" id="list1">
                                   <ul>
                                    ${document.getElementById("data").value}
                                   </ul>
@@ -56,6 +63,8 @@ function add(){
                           </div>`;
     document.getElementById("listspace").prepend(listItem);
     document.getElementById("data").value = "";
+
+    done5(document.getElementById('list1'))
 }
 
 
