@@ -11,7 +11,7 @@
     
 }
 .navbar{
-    background-color: rgba(194, 221, 245, 0.742);
+    background-color: rgba(247, 247, 248, 0.742);
     box-shadow: 2px 2px 10px rgba(27, 26, 26, 0.14);
 }
 
@@ -21,7 +21,7 @@
     padding-right: 1rem;
 }
 #body{
-    background-color: rgb(194, 221, 245);
+    background-color: rgb(255, 255, 255);
 }
 
 

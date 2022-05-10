@@ -16,7 +16,7 @@
     font-weight: bold;
 }
 #body{
-    background-color: rgb(194, 221, 245);
+    background-color: rgb(255, 255, 255);
 }
 
 #home {
@@ -26,7 +26,7 @@
 }
 
 #list{
-    background-color: rgb(194, 221, 245);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 1rem;
     padding-top: 3rem;
 }
@@ -44,8 +44,8 @@
     
 }
 #na{
-    background-color: rgba(194, 221, 245, 0.577);
-    box-shadow: 1px 1px 20px rgba(27, 26, 26, 0.325);
+    background-color: rgba(247, 247, 247, 0.577);
+    box-shadow: 1px 1px 15px rgba(27, 26, 26, 0.325);
     position: fixed;
     top: 0px;
     z-index: 100;
@@ -58,7 +58,7 @@
     border: 1px solid rgba(156, 128, 128, 0.734);
     border-radius: 7px;
     padding: 1rem;
-    background-color:rgba(194, 221, 245, 0.577);
+    background-color:rgba(224, 234, 243, 0.807);
     box-shadow: 2px 2px 15px rgba(27, 26, 26, 0.649);
     z-index: 100;
 }
@@ -83,7 +83,7 @@
     border: 1px solid rgba(156, 128, 128, 0.734);
     border-radius: 7px;
     padding: 1rem;
-    background-color:rgba(194, 221, 245, 0.771);
+    background-color:rgba(221, 234, 246, 0.771);
     box-shadow: 2px 2px 15px rgba(27, 26, 26, 0.649);
     z-index: 100;
 }
