@@ -8,12 +8,12 @@ function displayTodo(data) {
     let listItem = document.createElement('div');
     listItem.className = "col-lg-4 col-md-6 card1";
     listItem.innerHTML = `<div class="card h-100">
-                              <div class="card-body">
-                                  <input type="checkbox"  ${state}>
-                                  <ul>
-                                   ${x.title}
-                                  </ul>
+                            <div class="card-body">
+                              <div class="row " >
+                                <div class="col-sm-1"><input type="checkbox" ${state}></div>
+                                <div class="col-sm-11">${x.title}</div>
                               </div>
+                            </div>
                           </div>`;
     document.getElementById("listspace").append(listItem);
 
@@ -55,12 +55,12 @@ function add(){
     let listItem = document.createElement('div');
     listItem.className = "col-lg-4 col-md-6 card1";
     listItem.innerHTML = `<div class="card h-100">
-                              <div class="card-body">
-                                  <input type="checkbox" id="list1">
-                                  <ul>
-                                   ${document.getElementById("data").value}
-                                  </ul>
+                            <div class="card-body">
+                              <div class="row " >
+                                <div class="col-sm-1"><input type="checkbox" id="list1"></div>
+                                <div class="col-sm-11">${document.getElementById("data").value}</div>
                               </div>
+                            </div>
                           </div>`;
     document.getElementById("listspace").prepend(listItem);
     document.getElementById("data").value = "";
