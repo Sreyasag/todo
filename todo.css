@@ -50,5 +50,21 @@
     top: 0px;
     z-index: 100;
 }
+#addbox{
+    visibility:hidden;
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    border: 1px solid rgba(156, 128, 128, 0.734);
+    border-radius: 7px;
+    padding: 1rem;
+    background-color:rgba(222, 222, 222, 0.586);
+    box-shadow: 1px 1px 4px rgb(104, 111, 111);
+    z-index: 100;
+}
+.buttons{
+    text-align: right;
+    
+}
 
    

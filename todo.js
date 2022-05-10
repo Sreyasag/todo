@@ -11,7 +11,7 @@ function displayTodo(data) {
                               <div class="card-body">
                                   <input type="checkbox"  ${state}>
                                   <ul>
-                                      ${x.title}
+                                   ${x.title}
                                   </ul>
                               </div>
                           </div>`;
@@ -43,6 +43,20 @@ p.then(function(checkboxes){
   }  
 })
 
+function add(){
+    let listItem = document.createElement('div');
+    listItem.className = "col-lg-4 col-md-6 card1";
+    listItem.innerHTML = `<div class="card h-100">
+                              <div class="card-body">
+                                  <input type="checkbox">
+                                  <ul>
+                                   ${document.getElementById("data").value}
+                                  </ul>
+                              </div>
+                          </div>`;
+    document.getElementById("listspace").prepend(listItem);
+    document.getElementById("data").value = "";
+}
 
 
 
