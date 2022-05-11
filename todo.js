@@ -10,8 +10,8 @@ function displayTodo(data) {
     listItem.innerHTML = `<div class="card h-100">
                             <div class="card-body">
                               <div class="row " >
-                                <div class="col-sm-1"><input type="checkbox" ${state}></div>
-                                <div class="col-sm-11">${x.title}</div>
+                                <div class="col-1"><input type="checkbox" ${state}></div>
+                                <div class="col-11">${x.title}</div>
                               </div>
                             </div>
                           </div>`;
@@ -57,8 +57,8 @@ function add(){
     listItem.innerHTML = `<div class="card h-100">
                             <div class="card-body">
                               <div class="row " >
-                                <div class="col-sm-1"><input type="checkbox" id="list1"></div>
-                                <div class="col-sm-11">${document.getElementById("data").value}</div>
+                                <div class="col-1"><input type="checkbox" id="list1"></div>
+                                <div class="col-11">${document.getElementById("data").value}</div>
                               </div>
                             </div>
                           </div>`;
@@ -71,6 +71,12 @@ function add(){
 
 
 
+document.addEventListener("wheel", (event)=> {
+  let y = event.deltaY ;
+  if(y > 0) {document.getElementById('na').style.top="-50px"};
+  if(y<0) {document.getElementById('na').style.top="0px"};
+  });
+document.getElementById('na').addEventListener("mouseover", ()=> {document.getElementById('na').style.top="0px";})
   
 
 
